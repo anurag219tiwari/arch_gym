@@ -1,0 +1,173 @@
+Script started on 2023-08-24 20:39:23+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="205" LINES="41"]
+[?2004h]0;iit@iit-OptiPlex-3070: ~/MTP_ANURAG/new/arch-gym/sims/FARSI_sim[01;32miit@iit-OptiPlex-3070[00m:[01;34m~/MTP_ANURAG/new/arch-gym/sims/FARSI_sim[00m$ traib[K[K[K[K[Kpython3 train_aco[K[K[Kbo_FARSIEnv.py 
+[?2004l['/home/iit/MTP_ANURAG/new/arch-gym', '/home/iit/MTP_ANURAG/new/arch-gym/sims/FARSI_sim', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/iit/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+[0mImport Successful!
+['/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../sims/DRAM/binary/DRAMSys_Proxy_Model', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/DRAM', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/Sniper', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/Timeloop', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym', '/home/iit/MTP_ANURAG/new/arch-gym', '/', '/home/iit/MTP_ANURAG/new/arch-gym', '/home/iit/MTP_ANURAG/new/arch-gym/sims/FARSI_sim', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/iit/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+['/home/iit/MTP_ANURAG/new/arch-gym', '/configs', '/configs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../sims/DRAM/binary/DRAMSys_Proxy_Model', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/DRAM', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/Sniper', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/Timeloop', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym', '/home/iit/MTP_ANURAG/new/arch-gym', '/', '/home/iit/MTP_ANURAG/new/arch-gym', '/home/iit/MTP_ANURAG/new/arch-gym/sims/FARSI_sim', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/iit/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+['/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../sims/DRAM/binary/DRAMSys_Proxy_Model', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym', '/configs', '/configs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../sims/DRAM/binary/DRAMSys_Proxy_Model', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs/../../', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/envs', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/DRAM', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/Sniper', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims/Timeloop', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym/sims', '/home/iit/MTP_ANURAG/new/arch-gym/arch_gym', '/home/iit/MTP_ANURAG/new/arch-gym', '/', '/home/iit/MTP_ANURAG/new/arch-gym', '/home/iit/MTP_ANURAG/new/arch-gym/sims/FARSI_sim', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/iit/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+/home/iit/MTP_ANURAG/new/arch-gym/Project_FARSI/cacti_for_FARSI/cacti True
+/home/iit/MTP_ANURAG/new/arch-gym/Project_FARSI/cacti_for_FARSI/farsi_gen.cfg True
+/home/iit/MTP_ANURAG/new/arch-gym/Project_FARSI/cacti_for_FARSI/data_log.csv True
+Trajectory directory: ./bo_trajectories/power/edge_detection_random_state_2_num_iter_10
+Log directory: ./bo_logs/power/edge_detection_random_state_2_num_iter_10
+workload edge_detection
+reward_formulation power
+use_envlogger False
+exp_log_dir ./bo_logs/power/edge_detection_random_state_2_num_iter_10
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+opt type
+<class 'skopt.searchcv.BayesSearchCV'>
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+Episode: 0  Rewards: -10000.0
+Obs: [1000.0, 1000.0, 1000.0]
+Action
+{'pe_allocation_0': 0, 'pe_allocation_1': 0, 'pe_allocation_2': 0, 'mem_allocation_0': 0, 'mem_allocation_1': 0, 'mem_allocation_2': 0, 'bus_allocation_0': 0, 'bus_allocation_1': 0, 'bus_allocation_2': 0, 'pe_to_bus_connection_0': 0, 'pe_to_bus_connection_1': 0, 'pe_to_bus_connection_2': 0, 'bus_to_bus_connection_0': -1, 'bus_to_bus_connection_1': -1, 'bus_to_bus_connection_2': -1, 'bus_to_mem_connection_0': -1, 'bus_to_mem_connection_1': -1, 'bus_to_mem_connection_2': -1, 'task_to_pe_mapping_0': 0, 'task_to_pe_mapping_1': 0, 'task_to_pe_mapping_2': 0, 'task_to_pe_mapping_3': 0, 'task_to_pe_mapping_4': 0, 'task_to_pe_mapping_5': 0, 'task_to_pe_mapping_6': 0, 'task_to_pe_mapping_7': 0, 'task_to_mem_mapping_0': 0, 'task_to_mem_mapping_1': 0, 'task_to_mem_mapping_2': 0, 'task_to_mem_mapping_3': 0, 'task_to_mem_mapping_4': 0, 'task_to_mem_mapping_5': 0, 'task_to_mem_mapping_6': 0, 'task_to_mem_mapping_7': 0}
+*****************************
+***** YOU ASKED TO USE CACTI FOR POWER/AREA MODELING OF MEMORY SUBSYSTEM. MAKE SURE YOU HAVE CACTI INSTALLED ****
+*****************************
+Not using envlogger
+something has gone wrong with the path calculation
+[?2004h]0;iit@iit-OptiPlex-3070: ~/MTP_ANURAG/new/arch-gym/sims/FARSI_sim[01;32miit@iit-OptiPlex-3070[00m:[01;34m~/MTP_ANURAG/new/arch-gym/sims/FARSI_sim[00m$ exit
+[?2004lexit
+
+Script done on 2023-08-24 20:39:49+05:30 [COMMAND_EXIT_CODE="0"]
