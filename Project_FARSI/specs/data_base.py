@@ -496,7 +496,7 @@ class DataBase:
         print("there should be at least one block that is similar ")
         exit(0)
 
-    def sample_DMA(self):
+    def sample_DMA(self,block_type):
        return list(filter(lambda blockL: blockL.block_type == block_type, self.blocksL))
 
     def get_tasksL(self):
