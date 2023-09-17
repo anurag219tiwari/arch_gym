@@ -1,6 +1,7 @@
 import os
 import sys
 
+from timeit import default_timer as timer
 import pickle as cPickle
 import datetime
 settings_file_path = os.path.realpath(__file__)
@@ -148,6 +149,7 @@ def FARSI_optimization_function(p):
     
 
 def main(_):
+    start = timer()
     dummy_env = FARSI_sim_wrapper.make_FARSI_sim_env(reward_formulation = FLAGS.reward_formulation, workload=FLAGS.workload)
     FARSI_sim_helper = helpers()
     design_space_mode = "limited"  # ["limited", "comprehensive"]
@@ -188,6 +190,9 @@ def main(_):
     ax[0].plot(Y_history.index, Y_history.values, '.', color='red')
     Y_history.min(axis=1).cummin().plot(kind='line')
     plt.savefig(os.path.join(exp_log_dir, "Y_history.png"))
+    end = timer()
+
+    print("Total time taken:", end - start)
 
 if __name__ == '__main__':
    app.run(main)
