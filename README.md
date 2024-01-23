@@ -82,3 +82,4 @@ Follow the steps below to do so:
 
 #### FARSI Setup
 *Coming Soon*
+#arch_gym
