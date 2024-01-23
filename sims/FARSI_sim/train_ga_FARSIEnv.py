@@ -105,7 +105,7 @@ def FARSI_optimization_function(p):
 
     env = FARSI_sim_wrapper.make_FARSI_sim_env(reward_formulation = FLAGS.reward_formulation, workload=FLAGS.workload)
     FARSI_sim_helper = helpers()
-    design_space_mode = "limited"  # ["limited", "comprehensive"]
+    design_space_mode = "comprehensive"  # ["limited", "comprehensive"]
     SOC_design_space = FARSI_sim_helper.gen_SOC_design_space(env, design_space_mode)
     encoding_dictionary = FARSI_sim_helper.gen_SOC_encoding(env, SOC_design_space)
 
